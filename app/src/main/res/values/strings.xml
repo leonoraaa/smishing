@@ -11,6 +11,12 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
+    //leonora start
+    <string name="click_smishing_prompt">Click the smishing message!</string>
+    <string name="restart">Restart</string>
+    <string name="next">Next</string>
+    //leonora end
+
     <string name="menu_home">Home</string>
 
     <string name="title_activity_login">LoginActivity</string>
