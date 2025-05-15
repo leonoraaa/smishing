@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    //mohit start
+    <!-- mohit start -->
     <TextView
         android:id="@+id/feedbackLabel"
         android:layout_width="match_parent"
@@ -51,9 +51,9 @@
         android:text="@string/next"
         style="?android:attr/borderlessButtonStyle"
         android:enabled="false" />
-    //mohit end
+    <!-- mohit end -->
 
-    //leonora start
+    <!-- leonora start -->
     <ProgressBar
         android:id="@+id/progressBar"
         android:layout_width="match_parent"
@@ -92,5 +92,5 @@
             android:layout_gravity="center"
             />
     </LinearLayout>
-    //leonora end
+    <!-- leonora end -->
 </LinearLayout>
