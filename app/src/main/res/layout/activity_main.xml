@@ -218,6 +218,15 @@
             app:layout_constraintVertical_bias="0.0"
             tools:ignore="MissingConstraints" />
 
+        //leonora start
+        <Button
+            android:id="@+id/gameButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Play Smishing Game"
+            android:layout_centerInParent="true" />
+        //leonora end
+
         <Button
             android:id="@+id/learn_more_btn"
             android:layout_width="match_parent"

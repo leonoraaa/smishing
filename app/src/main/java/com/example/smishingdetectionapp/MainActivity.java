@@ -23,6 +23,8 @@ import com.example.smishingdetectionapp.ui.login.LoginActivity;
 
 import com.example.smishingdetectionapp.notifications.NotificationPermissionDialogFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import android.view.View;
+
 
 public class MainActivity extends SharedActivity {
     private AppBarConfiguration mAppBarConfiguration;
@@ -34,6 +36,8 @@ public class MainActivity extends SharedActivity {
         super.onCreate(savedInstanceState);
         ActivityMainBinding binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
+        gameButton();  //leonora
 
         mAppBarConfiguration = new AppBarConfiguration.Builder(R.id.nav_home, R.id.nav_news, R.id.nav_settings)
                 .build();
@@ -78,7 +82,6 @@ public class MainActivity extends SharedActivity {
             startActivity(intent);
         });
 
-
         // Database connection
         DatabaseAccess databaseAccess = DatabaseAccess.getInstance(getApplicationContext());
         databaseAccess.open();
@@ -98,6 +101,23 @@ public class MainActivity extends SharedActivity {
         databaseAccess.close();
 
     }
+
+    //leonora start
+    private void startGame(String level) {
+        Intent intent = new Intent(MainActivity.this, RealVsSmishGame.class);
+        intent.putExtra("level", level);
+        startActivity(intent);
+    }
+
+    private void gameButton() {
+        Button gameButton = findViewById(R.id.gameButton);
+
+        gameButton.setOnClickListener( v -> {
+            Intent intent = new Intent(MainActivity.this, RealVsSmishGame.class);
+            startActivity(intent);
+        });
+    }
+    //leonora end
 
     private boolean areNotificationsEnabled() {
         return NotificationManagerCompat.from(this).areNotificationsEnabled();

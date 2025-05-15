@@ -11,6 +11,10 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
+    <string name="click_smishing_prompt">Click the smishing message!</string>
+    <string name="restart">Restart</string>
+    <string name="next">Next</string>
+
     <string name="menu_home">Home</string>
 
     <string name="title_activity_login">LoginActivity</string>
@@ -90,7 +94,6 @@
 
     Please scroll to the bottom to continue.
 </string>
-
 
 
     <!-- Password Change Window Strings -->
@@ -219,7 +222,6 @@
     <string name="title_activity_signup">SignupActivity</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-
 
 
     <!-- Added strings -->
